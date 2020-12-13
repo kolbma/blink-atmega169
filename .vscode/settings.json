@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.runnables.overrideCargo": "./cargo.sh",
+    "editor.formatOnSave": true,
+    "rust-client.engine": "rust-analyzer"
+}

@@ -1,0 +1,19 @@
+[package]
+name = "blink-atmega169"
+version = "0.1.0"
+authors = ["Markus Kolb <github@tower-net.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = "s"
+panic = "abort"
+
+[profile.release]
+opt-level = "s"
+panic = "abort"
+
+[dependencies]
+avr-std-stub = "1.0"
+avr-device = { path = "/home/makolb/temp/avr-device", default-features = false, features = ["atmega169", "rt"] }
